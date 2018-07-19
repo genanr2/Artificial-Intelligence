@@ -1,0 +1,10 @@
+ERROR: Cannot load "nd.dat"
+
+UNKNOWN         Can not find "RLib.Errors"[13]
+
+------------------- TRACEBACK -------------------------
+Module "RMod " Message   0: file ".\err.c   " line 659
+Module "Res  " Message  -1: file ".\reslib.c" line 63
+Module "Err  " Message  -1: file ".\err.c   " line 2073
+-------------------------------------------------------
+FATAL ERROR     Failure during error recovery

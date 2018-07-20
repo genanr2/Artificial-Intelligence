@@ -1,0 +1,23 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (.\..\Debug\) contains files shared from another project (ArmStat.vcxproj, b50.vcxproj, DataGrid.vcxproj, KbParse.vcxproj, Mrcext.vcxproj, ogmSasD.vcxproj, owldll.vcxproj, TableParse.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(937,5): warning MSB8027: Two or more files with the name of netsetup.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\know32\netsetup.cpp, ..\KNOW32\RuleBrowser\Netsetup.cpp.
+  ToDoCtrl.cpp
+c:\kruzhka\vstudio\ee21\b50\prefrences\todoctrl.cpp(4): warning C4653: compiler option 'Optimizations (one or more of /Oawstgp[y]) or debug checks (one or more of /GZ, /RTCcsu)' inconsistent with precompiled header; current command-line option ignored
+c:\kruzhka\vstudio\ee21\b50\prefrences\todoctrl.cpp(4): warning C4652: compiler option 'Generate Browser Info' inconsistent with precompiled header; current command-line option will override that defined in the precompiled header
+c:\kruzhka\vstudio\ee21\b50\prefrences\todoctrl.cpp(4): warning C4652: compiler option 'Warning level (/W<n>)' inconsistent with precompiled header; current command-line option will override that defined in the precompiled header
+c:\kruzhka\vstudio\ee21\b50\prefrences\todoctrl.cpp(595): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+c:\kruzhka\vstudio\ee21\b50\prefrences\todoctrl.cpp(3997): warning C4838: conversion from 'int' to 'UINT' requires a narrowing conversion
+c:\kruzhka\vstudio\ee21\b50\prefrences\todoctrl.cpp(5920): warning C4700: uninitialized local variable 'aa' used
+c:\kruzhka\vstudio\ee21\b50\prefrences\todoctrl.cpp(6222): warning C4700: uninitialized local variable 'aa' used
+.\..\Debug/ColourPicker.obj : warning LNK4042: object specified more than once; extras ignored
+.\..\Debug/ColourPopup.obj : warning LNK4042: object specified more than once; extras ignored
+.\..\Debug/Netsetup.obj : warning LNK4042: object specified more than once; extras ignored
+LINK : warning LNK4103: import of deleting destructor 'public: virtual void * __thiscall NDMnu::`vector deleting destructor'(unsigned int)'; image may not run correctly
+LINK : warning LNK4103: import of deleting destructor 'public: virtual void * __thiscall NDFileW::`vector deleting destructor'(unsigned int)'; image may not run correctly
+LINK : warning LNK4103: import of deleting destructor 'public: virtual void * __thiscall NDVarGr::`vector deleting destructor'(unsigned int)'; image may not run correctly
+.\b54mdll.def(4): warning LNK4017: DESCRIPTION statement not supported for the target platform; ignored
+     Creating library .\..\Debug/b54mdll.lib and object .\..\Debug/b54mdll.exp
+LINK : warning LNK4098: defaultlib 'mfc140ud.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'mfcs140ud.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  b54mdll.vcxproj -> C:\Kruzhka\VStudio\ee21\B50\B54MDLL\.\..\Debug\b54mdll.dll
+c:\program files (x86)\windows kits\8.1\include\um\mshtml.h(37494): warning BK4504: file contains too many references; ignoring further references from this source

@@ -1,0 +1,1751 @@
+(@VERSION=	041)
+(@PROPERTY=	Аудиторское_заключение	@TYPE=String;)
+(@PROPERTY=	Банковское	@TYPE=String;)
+(@PROPERTY=	Благотворительная_деятельность	@TYPE=String;)
+(@PROPERTY=	Влияние_учредителей	@TYPE=Integer;)
+(@PROPERTY=	Внешний_риск	@TYPE=String;)
+(@PROPERTY=	Вхождение_в_банковскую_группу	@TYPE=String;)
+(@PROPERTY=	Выполняет	@TYPE=String;)
+(@PROPERTY=	Выпуск_новых_номиналов	@TYPE=Boolean;)
+(@PROPERTY=	Депозитные_сертификаты	@TYPE=Boolean;)
+(@PROPERTY=	Диверсификационная_структура	@TYPE=String;)
+(@PROPERTY=	Доказано	@TYPE=Boolean;)
+(@PROPERTY=	Долгосрочные_кредитные_вложения	@TYPE=Integer;)
+(@PROPERTY=	Доходность	@TYPE=Boolean;)
+(@PROPERTY=	Доходы	@TYPE=Integer;)
+(@PROPERTY=	Замкнутость_структуры	@TYPE=String;)
+(@PROPERTY=	Значение	@TYPE=Integer;)
+(@PROPERTY=	Имидж	@TYPE=String;)
+(@PROPERTY=	Имидж_в_банковских_кругах	@TYPE=String;)
+(@PROPERTY=	Использование_межбанковского_кредита	@TYPE=String;)
+(@PROPERTY=	Количество	@TYPE=Integer;)
+(@PROPERTY=	Конвертируемые_акции	@TYPE=Boolean;)
+(@PROPERTY=	Краткосрочные_кредитные_вложения	@TYPE=Integer;)
+(@PROPERTY=	Лизинг	@TYPE=Integer;)
+(@PROPERTY=	Ликвидность_баланса	@TYPE=Integer;)
+(@PROPERTY=	Льготы	@TYPE=String;)
+(@PROPERTY=	Межбанковские_связи	@TYPE=Integer;)
+(@PROPERTY=	Местонахождение	@TYPE=Integer;)
+(@PROPERTY=	Мнение_эксперта	@TYPE=String;)
+(@PROPERTY=	Налоги	@TYPE=Integer;)
+(@PROPERTY=	Облигации	@TYPE=Boolean;)
+(@PROPERTY=	Образование	@TYPE=String;)
+(@PROPERTY=	Объём_доходов	@TYPE=String;)
+(@PROPERTY=	Обычные_акции	@TYPE=Boolean;)
+(@PROPERTY=	Операции_с_населением	@TYPE=String;)
+(@PROPERTY=	Опционные_акции	@TYPE=Boolean;)
+(@PROPERTY=	Освобождённость_от_налогов	@TYPE=String;)
+(@PROPERTY=	Отделения	@TYPE=Integer;)
+(@PROPERTY=	Отраслевая_направленность	@TYPE=String;)
+(@PROPERTY=	Отрасль	@TYPE=String;)
+(@PROPERTY=	Перспективность	@TYPE=String;)
+(@PROPERTY=	Повышение_курса_предложений	@TYPE=Boolean;)
+(@PROPERTY=	Повышение_цен_акций	@TYPE=Boolean;)
+(@PROPERTY=	Политика	@TYPE=Integer;)
+(@PROPERTY=	Привилегированные_акции	@TYPE=Boolean;)
+(@PROPERTY=	Проценты_по_депозитам	@TYPE=Integer;)
+(@PROPERTY=	Проценты_по_кредитам	@TYPE=Integer;)
+(@PROPERTY=	Рейтинг	@TYPE=Integer;)
+(@PROPERTY=	Риск	@TYPE=String;)
+(@PROPERTY=	Руководство	@TYPE=Integer;)
+(@PROPERTY=	Сберегательные_сертификаты	@TYPE=Boolean;)
+(@PROPERTY=	Связи_с_учредителями	@TYPE=Integer;)
+(@PROPERTY=	Смена_руководителя	@TYPE=String;)
+(@PROPERTY=	Сменяемость	@TYPE=String;)
+(@PROPERTY=	Сохранность_капитала	@TYPE=Boolean;)
+(@PROPERTY=	Справка_из_налоговой_инспекции	@TYPE=String;)
+(@PROPERTY=	Срок	@TYPE=Integer;)
+(@PROPERTY=	Стабильность_фондового_индекса	@TYPE=Boolean;)
+(@PROPERTY=	Стаж_работы_в_банках	@TYPE=Integer;)
+(@PROPERTY=	Степень	@TYPE=Integer;)
+(@PROPERTY=	Степень_риска	@TYPE=String;)
+(@PROPERTY=	Структура	@TYPE=Integer;)
+(@PROPERTY=	Сфера_вложения	@TYPE=Integer;)
+(@PROPERTY=	Сфера_действия	@TYPE=Integer;)
+(@PROPERTY=	Текущий_банк	@TYPE=Integer;)
+(@PROPERTY=	Тип	@TYPE=String;)
+(@PROPERTY=	Тип_банка	@TYPE=String;)
+(@PROPERTY=	Тип_лица	@TYPE=String;)
+(@PROPERTY=	Тип_отрасли	@TYPE=String;)
+(@PROPERTY=	Тип_оценки	@TYPE=String;)
+(@PROPERTY=	Увеличение_доходов	@TYPE=String;)
+(@PROPERTY=	Учредители	@TYPE=Integer;)
+(@PROPERTY=	Факторинг	@TYPE=Integer;)
+(@PROPERTY=	Филиалы	@TYPE=Integer;)
+
+
+(@CLASS=	aaa
+)
+
+(@CLASS=	Банк
+	(@PUBLICPROPS=
+		Доходы
+		Ликвидность_баланса
+		Межбанковские_связи
+		Местонахождение
+		Налоги
+		Политика
+		Рейтинг
+		Руководство
+		Структура
+		Сфера_действия
+		Учредители
+	)
+)
+
+(@CLASS=	Задачи
+)
+
+(@CLASS=	Интересы
+)
+
+(@CLASS=	Оценка_банков
+	(@SUBCLASSES=
+		Оценка_по_основным_факторам
+		Оценка_по_видам_ценных_бумаг
+		Оценка_по_курсам_ценных_бумаг
+	)
+	(@PUBLICPROPS=
+		Тип_оценки
+	)
+)
+
+(@CLASS=	Оценка_по_видам_ценных_бумаг
+	(@PUBLICPROPS=
+		Тип_оценки
+	)
+)
+
+(@CLASS=	Оценка_по_курсам_ценных_бумаг
+	(@PUBLICPROPS=
+		Тип_оценки
+	)
+)
+
+(@CLASS=	Оценка_по_основным_факторам
+	(@PUBLICPROPS=
+		Тип_оценки
+	)
+)
+
+(@CLASS=	Сфера_действия_банка
+)
+
+(@CLASS=	Фамилии
+)
+
+
+(@OBJECT=	sstart
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Аудиторское_заключение
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Банковская_политика
+	(@SUBOBJECTS=
+		Краткосрочные_кредитные_вложения
+		Долгосрочные_кредитные_вложения
+		Проценты_по_кредитам
+		Проценты_по_депозитам
+		Сфера_вложения
+		Лизинг
+		Факторинг
+		Влияние_учредителей
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Влияние_учредителей
+		Доказано
+		Долгосрочные_кредитные_вложения
+		Краткосрочные_кредитные_вложения
+		Лизинг
+		Проценты_по_депозитам
+		Проценты_по_кредитам
+		Сфера_вложения
+		Факторинг
+	)
+)
+
+(@OBJECT=	Банковская_политика1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Благотворительная_деятельность
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Виды_ценных_бумаг
+)
+
+(@OBJECT=	Влияние_учредителей
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Внешний_риск
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Вхождение_в_банковскую_группу
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Диверсификационная_структура
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Тип
+	)
+)
+
+(@OBJECT=	Динамика_движения_рыночных_цен
+)
+
+(@OBJECT=	Долгосрочные_кредитные_вложения
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Доход_дивиденд
+)
+
+(@OBJECT=	Доходы
+	(@SUBOBJECTS=
+		Освобождённость_от_налогов
+		Увеличение_доходов
+		Объём_доходов
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Объём_доходов
+		Освобождённость_от_налогов
+		Увеличение_доходов
+	)
+)
+
+(@OBJECT=	Доходы1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Задачи_по_видам_ценных_бумаг
+	(@CLASSES=
+		Задачи
+		Оценка_по_видам_ценных_бумаг
+	)
+	(@SUBOBJECTS=
+		Виды_ценных_бумаг
+		Условия_выпуска
+		Условия_обращения
+		Условия_погашения
+		Ответственность_эмитента
+		Права_инвестора
+		Обязанности_сторон
+	)
+	(@PUBLICPROPS=
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Задачи_по_курсам_ценных_бумаг
+	(@CLASSES=
+		Оценка_по_курсам_ценных_бумаг
+		Задачи
+	)
+	(@SUBOBJECTS=
+		Место_сделки
+		Объём_сделок
+		Цена
+		Динамика_движения_рыночных_цен
+		Доход_дивиденд
+	)
+	(@PUBLICPROPS=
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Задачи_с_основными_факторами
+	(@CLASSES=
+		Оценка_по_основным_факторам
+		Задачи
+	)
+	(@SUBOBJECTS=
+		Сфера_действия
+		Структура
+		Руководство
+		Ликвидность_баланса
+		Межбанковские_связи
+		Доходы
+		Налоги
+		Банковская_политика
+		Местонахождение
+		Учредители
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Текущий_банк
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Замкнутость_структуры
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Тип
+	)
+)
+
+(@OBJECT=	Имидж_в_банковских_кругах
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Имидж
+	)
+)
+
+(@OBJECT=	Использование_межбанковского_кредита
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Краткосрочные_кредитные_вложения
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Лизинг
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Ликвидность_баланса
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Ликвидность_баланса1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Льготы
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Межбанковские_связи
+	(@SUBOBJECTS=
+		Использование_межбанковского_кредита
+		Мнение_эксперта
+		Вхождение_в_банковскую_группу
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Вхождение_в_банковскую_группу
+		Доказано
+		Использование_межбанковского_кредита
+		Мнение_эксперта
+	)
+)
+
+(@OBJECT=	Межбанковские_связи1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Место_сделки
+)
+
+(@OBJECT=	Местонахождение
+	(@SUBOBJECTS=
+		Внешний_риск
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Внешний_риск
+		Доказано
+	)
+)
+
+(@OBJECT=	Местонахождение1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Мнение_эксперта
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Налоги
+	(@SUBOBJECTS=
+		Льготы
+		Благотворительная_деятельность
+		Аудиторское_заключение
+		Справка_из_налоговой_инспекции
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Аудиторское_заключение
+		Благотворительная_деятельность
+		Доказано
+		Льготы
+		Справка_из_налоговой_инспекции
+	)
+)
+
+(@OBJECT=	Налоги1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Образование
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Банковское
+		Доказано
+		Значение
+	)
+)
+
+(@OBJECT=	Объём_доходов
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Объём_сделок
+)
+
+(@OBJECT=	Обязанности_сторон
+)
+
+(@OBJECT=	Операции_с_населением
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Выполняет
+		Доказано
+		Значение
+	)
+)
+
+(@OBJECT=	Освобождённость_от_налогов
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Ответственность_эмитента
+)
+
+(@OBJECT=	Отделения
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Количество
+	)
+)
+
+(@OBJECT=	Отраслевая_направленность
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Отрасль
+	)
+)
+
+(@OBJECT=	Перспективность
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Тип_отрасли
+	)
+)
+
+(@OBJECT=	Права_инвестора
+)
+
+(@OBJECT=	Проценты_по_депозитам
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Проценты_по_кредитам
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Руководство
+	(@SUBOBJECTS=
+		Смена_руководителя
+		Образование
+		Стаж_работы_в_банках
+		Имидж_в_банковских_кругах
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Имидж_в_банковских_кругах
+		Образование
+		Смена_руководителя
+		Стаж_работы_в_банках
+	)
+)
+
+(@OBJECT=	Руководство1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Связи_с_учредителями
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Связи_с_учредителями
+	)
+)
+
+(@OBJECT=	Смена_руководителя
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Сменяемость
+	)
+)
+
+(@OBJECT=	Сохранение_БЗ_в_DBF
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Сохранить_БЗ_в_DBF
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Сохранить_Рейтинг_в_NxpDB
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Справка_из_налоговой_инспекции
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Стаж_работы_в_банках
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Срок
+	)
+)
+
+(@OBJECT=	Старт1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Старт2
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Старт3
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Степень_риска
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Риск
+		Степень
+	)
+)
+
+(@OBJECT=	Стратегии
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Стратегия_интересов
+	(@PUBLICPROPS=
+		Value	@TYPE=String;
+	)
+)
+
+(@OBJECT=	Структура
+	(@SUBOBJECTS=
+		Филиалы
+		Отделения
+		Замкнутость_структуры
+		Диверсификационная_структура
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Диверсификационная_структура
+		Доказано
+		Замкнутость_структуры
+		Отделения
+		Филиалы
+	)
+)
+
+(@OBJECT=	Структура1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Сфера_вложения
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Сфера_действия
+	(@SUBOBJECTS=
+		Степень_риска
+		Отраслевая_направленность
+		Операции_с_населением
+		Тип_банка
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Операции_с_населением
+		Отраслевая_направленность
+		Перспективность
+		Степень_риска
+		Тип_банка
+	)
+)
+
+(@OBJECT=	Сфера_действия1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Сфера_действия2
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Текущие_интересы
+	(@PUBLICPROPS=
+		Доказано
+		Тип_лица
+	)
+)
+
+(@OBJECT=	Тип_банка
+	(@CLASSES=
+		Сфера_действия_банка
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Увеличение_доходов
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Управление
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Условия_выпуска
+)
+
+(@OBJECT=	Условия_обращения
+)
+
+(@OBJECT=	Условия_погашения
+)
+
+(@OBJECT=	Учредители
+	(@SUBOBJECTS=
+		Связи_с_учредителями
+	)
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Связи_с_учредителями
+	)
+)
+
+(@OBJECT=	Учредители1
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+	)
+)
+
+(@OBJECT=	Факторинг
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+	)
+)
+
+(@OBJECT=	Физические_интересы_видов_ценных_бумаг
+	(@CLASSES=
+		Оценка_по_видам_ценных_бумаг
+		Интересы
+	)
+	(@PUBLICPROPS=
+		Депозитные_сертификаты
+		Конвертируемые_акции
+		Облигации
+		Опционные_акции
+		Привилегированные_акции
+		Сберегательные_сертификаты
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Физические_интересы_курсов_ценных_бумаг
+	(@CLASSES=
+		Оценка_по_курсам_ценных_бумаг
+		Интересы
+	)
+	(@PUBLICPROPS=
+		Выпуск_новых_номиналов
+		Повышение_курса_предложений
+		Стабильность_фондового_индекса
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Физические_интересы_основных_факторов
+	(@CLASSES=
+		Оценка_по_основным_факторам
+		Интересы
+	)
+	(@PUBLICPROPS=
+		Доходность
+		Повышение_цен_акций
+		Сохранность_капитала
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Филиалы
+	(@PUBLICPROPS=
+		Value	@TYPE=Boolean;
+		Доказано
+		Значение
+		Количество
+	)
+)
+
+(@OBJECT=	Цена
+)
+
+(@OBJECT=	Юридические_интересы_видов_ценных_бумаг
+	(@CLASSES=
+		Оценка_по_видам_ценных_бумаг
+		Интересы
+	)
+	(@PUBLICPROPS=
+		Депозитные_сертификаты
+		Обычные_акции
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Юридические_интересы_курсов_ценных_бумаг
+	(@CLASSES=
+		Оценка_по_курсам_ценных_бумаг
+		Интересы
+	)
+	(@PUBLICPROPS=
+		Тип_оценки
+	)
+)
+
+(@OBJECT=	Юридические_интересы_основных_факторов
+	(@CLASSES=
+		Оценка_по_основным_факторам
+		Интересы
+	)
+	(@PUBLICPROPS=
+		Доходность
+		Повышение_цен_акций
+		Сохранность_капитала
+		Тип_оценки
+	)
+)
+
+(@META=	|Банк|.Доходы
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Ликвидность_баланса
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	NOTKNOWN)
+)
+
+(@META=	|Банк|.Межбанковские_связи
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Местонахождение
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Налоги
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Политика
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Рейтинг
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+	@PROMPT="Определите Ваш РЕЙТИНГ для @SELF (1-100, 0-неизвестно)";
+)
+
+(@META=	|Банк|.Руководство
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Структура
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Сфера_действия
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Банк|.Учредители
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	|Оценка_банков|.Тип_оценки
+	@PROMPT="По каким параметрам будет происходить оценка?";
+)
+
+(@META=	Банковская_политика.Value
+	(@CONTEXTS=	
+		Банковская_политика1
+	)
+)
+
+(@META=	Банковская_политика.Влияние_учредителей
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Банковская_политика.Долгосрочные_кредитные_вложения
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Банковская_политика.Краткосрочные_кредитные_вложения
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Банковская_политика.Лизинг
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Банковская_политика.Проценты_по_депозитам
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Банковская_политика.Проценты_по_кредитам
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Банковская_политика.Сфера_вложения
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Банковская_политика.Факторинг
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	0)
+)
+
+(@META=	Диверсификационная_структура.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Диверсификационная_структура.Тип
+	@PROMPT="Определите диверсификационность структуры вашей компании";
+)
+
+(@META=	Доходы.Value
+	(@CONTEXTS=	
+		Доходы1
+	)
+)
+
+(@META=	Доходы.Объём_доходов
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Доходы.Освобождённость_от_налогов
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Доходы.Увеличение_доходов
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Задачи_с_основными_факторами.Value
+	(@CONTEXTS=	
+		Сохранить_Рейтинг_в_NxpDB
+	)
+)
+
+(@META=	Задачи_с_основными_факторами.Доказано
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+)
+
+(@META=	Замкнутость_структуры.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Замкнутость_структуры.Тип
+	@PROMPT="Определите тип замкнутости структуры вашей компании";
+)
+
+(@META=	Имидж_в_банковских_кругах.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Имидж_в_банковских_кругах.Имидж
+	@PROMPT="Имеет ли ваш руководитель имидж в банковских кругах?";
+)
+
+(@META=	Ликвидность_баланса.Value
+	(@CONTEXTS=	
+		Ликвидность_баланса1
+	)
+)
+
+(@META=	Межбанковские_связи.Value
+	(@CONTEXTS=	
+		Межбанковские_связи1
+	)
+)
+
+(@META=	Межбанковские_связи.Вхождение_в_банковскую_группу
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Межбанковские_связи.Использование_межбанковского_кредита
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Межбанковские_связи.Мнение_эксперта
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Местонахождение.Value
+	@INFCAT=10;
+	(@CONTEXTS=	
+		Местонахождение1
+	)
+)
+
+(@META=	Местонахождение.Внешний_риск
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Налоги.Value
+	(@CONTEXTS=	
+		Налоги1
+	)
+)
+
+(@META=	Налоги.Аудиторское_заключение
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Налоги.Благотворительная_деятельность
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Налоги.Льготы
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Налоги.Справка_из_налоговой_инспекции
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Образование.Банковское
+	@PROMPT="Имеет ли руководитель банка банковское образование?";
+)
+
+(@META=	Образование.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Операции_с_населением.Выполняет
+	@PROMPT="Выполняет ли банк широкие операции с населением";
+)
+
+(@META=	Операции_с_населением.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Отделения.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Отделения.Количество
+	@PROMPT="Введите количество отделений в вашей компании";
+)
+
+(@META=	Отраслевая_направленность.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Отраслевая_направленность.Отрасль
+	@PROMPT="Имеет ли банк отраслевую направленность?";
+)
+
+(@META=	Перспективность.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Перспективность.Тип_отрасли
+	@PROMPT="Выберите значение сферы действия";
+)
+
+(@META=	Руководство.Value
+	(@CONTEXTS=	
+		Руководство1
+	)
+)
+
+(@META=	Руководство.Имидж_в_банковских_кругах
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Руководство.Образование
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"нет")
+)
+
+(@META=	Руководство.Смена_руководителя
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	"да")
+)
+
+(@META=	Руководство.Стаж_работы_в_банках
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	(@INITVAL=	1)
+)
+
+(@META=	Смена_руководителя.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Смена_руководителя.Сменяемость
+	@PROMPT="Сменялось ли руководство банка в течение последних двух лет?";
+)
+
+(@META=	Стаж_работы_в_банках.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Стаж_работы_в_банках.Срок
+	@PROMPT="Введите стаж работы в банке руководителя банка (в полных годах)";
+)
+
+(@META=	Старт1.Value
+	(@CONTEXTS=	
+		Задачи_с_основными_факторами
+	)
+)
+
+(@META=	Степень_риска.Доказано
+	@INFCAT=4;
+)
+
+(@META=	Степень_риска.Риск
+	@PROMPT="Укажите риск вашей компании ";
+)
+
+(@META=	Степень_риска.Степень
+	(@INITVAL=	0)
+)
+
+(@META=	Стратегия_интересов.Value
+	@PROMPT="Выстроена ли стратегия интересов?";
+	@WHY="Выясняется тип заинтересованного в построении рейтинга лица (физическое либо юридическое лицо). Отсюда и стратегии.";
+)
+
+(@META=	Структура.Value
+	(@CONTEXTS=	
+		Структура1
+	)
+)
+
+(@META=	Структура.Диверсификационная_структура
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=TRUE;
+)
+
+(@META=	Структура.Замкнутость_структуры
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	Структура.Отделения
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	Структура.Филиалы
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+)
+
+(@META=	Сфера_действия.Value
+	(@CONTEXTS=	
+		Сфера_действия1
+	)
+)
+
+(@META=	Сфера_действия.Доказано
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+)
+
+(@META=	Сфера_действия.Операции_с_населением
+	@INHSLOTUP=TRUE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=FALSE;
+	@PROMPT="Проводит ли @self широкие операции с населением?";
+)
+
+(@META=	Сфера_действия.Отраслевая_направленность
+	@INHSLOTUP=TRUE;
+	@INHSLOTDOWN=TRUE;
+	@PROMPT="Отраслевая направленность @self благоприятная?";
+)
+
+(@META=	Сфера_действия.Перспективность
+	@INHSLOTUP=TRUE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=TRUE;
+	@PROMPT="Определите перстпективность отрасли для @self.";
+)
+
+(@META=	Сфера_действия.Степень_риска
+	@INHSLOTUP=TRUE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=TRUE;
+	@PROMPT="Выберите риск для @self.";
+)
+
+(@META=	Сфера_действия.Тип_банка
+	@INHSLOTUP=TRUE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=TRUE;
+	@INHVALDOWN=TRUE;
+	@PROMPT="Определите тип банка у @self.";
+)
+
+(@META=	Текущие_интересы.Тип_лица
+	@PROMPT="Укажите тип лица, интересы которого будут рассматриваться.";
+)
+
+(@META=	Учредители.Value
+	(@CONTEXTS=	
+		Учредители1
+	)
+)
+
+(@META=	Учредители.Связи_с_учредителями
+	@INHSLOTUP=FALSE;
+	@INHSLOTDOWN=TRUE;
+	@INHVALUP=FALSE;
+	@INHVALDOWN=TRUE;
+	(@INITVAL=	0)
+)
+
+(@META=	Физические_интересы_основных_факторов.Повышение_цен_акций
+	@INFCAT=2;
+)
+
+(@META=	Физические_интересы_основных_факторов.Сохранность_капитала
+	@INFCAT=3;
+)
+
+(@META=	Филиалы.Значение
+	(@INITVAL=	0)
+)
+
+(@META=	Филиалы.Количество
+	@PROMPT="Введите количество филиалов вашей компании";
+)
+
+(@META=	Юридические_интересы_основных_факторов.Доходность
+	@INFCAT=3;
+)
+
+(@META=	Юридические_интересы_основных_факторов.Повышение_цен_акций
+	@INFCAT=2;
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Доходы;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Доходы*10)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Ликвидность_баланса;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Ликвидность_баланса*20)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Межбанковские_связи;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Межбанковские_связи*2)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Местонахождение;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Местонахождение*5)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Налоги;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Налоги*2)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Политика;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Политика*25)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Рейтинг;@TYPE=SLOT;)
+	(@FLAGS=PRIVATE;)
+	(@RHS=
+		(Execute	("Изменение")	(@WAIT=TRUE;@ATOMID=SELF.Рейтинг;))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Руководство;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Руководство*4)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Структура;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Структура*2)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Сфера_действия;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Сфера_действия*25)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	IfChange
+	(@ATOMID=Банк.Учредители;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(Assign	(SELF.Рейтинг+SELF.Учредители*5)	(SELF.Рейтинг))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Банк.Доходы;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Доходы)	(NOTKNOWN))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Банк.Сфера_действия;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Сфера_действия)	(NOTKNOWN))
+		(CreateObject	(SELF)	(|Задачи|))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Диверсификационная_структура.Тип;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Тип)	("диверсификационная"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Замкнутость_структуры.Тип;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Тип)	("замкнутая"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Имидж_в_банковских_кругах.Имидж;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Имидж)	("да"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Образование.Банковское;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Банковское)	("да"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Операции_с_населением.Выполняет;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Выполняет)	("да"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Отраслевая_направленность.Отрасль;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Отрасль)	("да"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Перспективность.Тип_отрасли;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Тип_отрасли)	("Перспективная"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Смена_руководителя.Сменяемость;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Сменяемость)	("да"))
+		(Assign	(1)	(SELF.Значение))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Степень_риска.Риск;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(AskQuestion	(SELF.Риск)	("Повышенный"))
+		(Assign	(1)	(SELF.Степень))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Структура.Диверсификационная_структура;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	("нет"))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Структура.Замкнутость_структуры;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	("нет"))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Структура.Отделения;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(0))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Структура.Филиалы;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(0))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_видов_ценных_бумаг.Депозитные_сертификаты;@TYPE=SL\
+OT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_видов_ценных_бумаг.Конвертируемые_акции;@TYPE=SLOT\
+;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(FALSE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_видов_ценных_бумаг.Облигации;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_видов_ценных_бумаг.Опционные_акции;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(FALSE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_видов_ценных_бумаг.Привилегированные_акции;@TYPE=S\
+LOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_видов_ценных_бумаг.Сберегательные_сертификаты;@TYP\
+E=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_курсов_ценных_бумаг.Выпуск_новых_номиналов;@TYPE=S\
+LOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_курсов_ценных_бумаг.Повышение_курса_предложений;@T\
+YPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Физические_интересы_курсов_ценных_бумаг.Стабильность_фондового_индекса\
+;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Юридические_интересы_видов_ценных_бумаг.Депозитные_сертификаты;@TYPE=S\
+LOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+(@METHOD=	OrderOfSources
+	(@ATOMID=Юридические_интересы_видов_ценных_бумаг.Обычные_акции;@TYPE=SLOT;)
+	(@FLAGS=PUBLIC;)
+	(@RHS=
+		(RunTimeValue	(TRUE))
+	)
+)
+
+(@RULE=	R1
+	(@LHS=
+		(Member	(<Налоги>)	(<|Банк|>))
+		(=	(<Налоги>.Аудиторское_заключение)	("да"))
+		(Member	(<|Банк|>)	(<Налоги>))
+	)
+	(@HYPO=	Аудиторское_заключение.Доказано)
+	(@RHS=
+		(Assign	(1)	(<|Банк|>.Налоги))
+	)
+)
+
+(@RULE=	R10
+	(@LHS=
+		(Member	(<Доходы>)	(<|Банк|>))
+	)
+	(@HYPO=	Доходы)
+	(@RHS=
+		(Retrieve	("nata7.nxp")	(@TYPE="NXPDB";\
+@PROPS=Освобождённость_от_налогов,Объём_доходов,\
+Увеличение_доходов;@FIELDS="Освобождённость_от_налогов",\
+"Объём_доходов","Увеличение_доходов";@ATOMS=<Доходы>;))
+	)
+)
+
+(@RULE=	R12
+	(@LHS=
+		(Assign	(Местонахождение)	(Местонахождение))
+		(Assign	(Сфера_действия)	(Сфера_действия))
+		(Assign	(Структура)	(Структура))
+		(Assign	(Руководство)	(Руководство))
+		(Assign	(Ликвидность_баланса)	(Ликвидность_баланса))
+		(Assign	(Межбанковские_связи)	(Межбанковские_связи))
+		(Assign	(Доходы)	(Доходы))
+		(Assign	(Налоги)	(Налоги))
+		(Assign	(Банковская_политика)	(Банковская_политика))
+		(Assign	(Учредители)	(Учредители))
+	)
+	(@HYPO=	Задачи_с_основными_факторами)
+	(@RHS=
+		(Reset	(Сохранить_Рейтинг_в_NxpDB))
+	)
+)
+
+(@GLOBALS=
+	@INHVALUP=FALSE;
+	@INHVALDOWN=TRUE;
+	@INHOBJUP=FALSE;
+	@INHOBJDOWN=FALSE;
+	@INHCLASSUP=FALSE;
+	@INHCLASSDOWN=TRUE;
+	@INHBREADTH=TRUE;
+	@INHPARENT=FALSE;
+	@PWTRUE=TRUE;
+	@PWFALSE=TRUE;
+	@PWNOTKNOWN=TRUE;
+	@EXHBWRD=TRUE;
+	@PTGATES=TRUE;
+	@PFACTIONS=FALSE;
+	@SOURCESON=TRUE;
+	@CACTIONSON=TRUE;
+	@VALIDUSER=FALSE;
+	@VALIDENGINE=FALSE;
+	@PFEACTIONS=FALSE;
+	@PFMACTIONS=GLOBAL;
+	@PFMEACTIONS=FALSE;
+	@SUGLIST=
+		sstart;
+)

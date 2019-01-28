@@ -1,0 +1,4 @@
+mfc140d.dll
+msvcp140d.dll
+ucrtbased.dll
+vcruntime140d.dll

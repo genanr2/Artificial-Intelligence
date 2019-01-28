@@ -1,0 +1,92 @@
+
+Path=
+C:\Program Files\Far Manager\;
+C:\Program Files (x86)\PC Connectivity Solution\;
+C:\Program Files\Microsoft MPI\Bin\;
+C:\Program Files (x86)\IntelSWTools\System Debugger 2017\system_trace\bin;
+C:\Python27\;
+C:\Python27\Scripts;
+C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;
+C:\WINDOWS\system32;
+C:\WINDOWS;
+C:\WINDOWS\System32\Wbem;
+C:\WINDOWS\System32\WindowsPowerShell\v1.0\;
+C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;
+C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;
+C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;
+C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;
+C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;
+C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;
+C:\Users\Administrator.WIN2016\.dnx\bin;
+C:\Program Files\Microsoft DNX\Dnvm\;
+C:\EE21\DAT\ENUSASC;
+C:\EE21\CPP\BIN;
+C:\EE21\CPP\DLLDBG;
+C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;
+C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;
+C:\Program Files (x86)\GtkSharp\2.12\bin;
+C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;
+C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;
+C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;
+C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;
+C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;
+C:\Program Files\dotnet\;
+C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;
+C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;
+C:\Python27;
+C:\Intel\DAL\;
+C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;
+C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;
+C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;
+C:\Program Files (x86)\Common Files\Acronis\FileProtector\;
+C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;
+C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;
+C:\Program Files\Git\cmd;
+C:\Users\Administrator.WIN2016\AppData\Local\Microsoft\WindowsApps;
+C:\Program Files (x86)\Microsoft VS Code\bin;
+C:\Program Files (x86)\Microsoft VS Code Insiders\bin;
+C:\Users\Administrator.WIN2016\AppData\Local\GitHubDesktop\bin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=2a07
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PROMPT=$P$G
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\PowerShell\Modules\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\PowerShell\Modules\
+PUBLIC=C:\Users\Public
+QtMsBuild=C:\Users\Administrator.WIN2016\AppData\Local\QtMsBuild
+SEARCH_ES_INDEX_PATH=C:\TfsData\Search\IndexStore
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\ADMINI~1.WIN\AppData\Local\Temp\1
+TMP=C:\Users\ADMINI~1.WIN\AppData\Local\Temp\1
+USERDOMAIN=WIN2016
+USERDOMAIN_ROAMINGPROFILE=WIN2016
+USERNAME=Administrator
+USERPROFILE=C:\Users\Administrator.WIN2016
+VS110COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\
+VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\
+VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+VSSDK140Install=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+VTUNE_AMPLIFIER_2017_FOR_SYSTEMS_DIR=C:\Program Files (x86)\IntelSWTools\VTune Amplifier 2017 for Systems\
+windir=C:\WINDOWS

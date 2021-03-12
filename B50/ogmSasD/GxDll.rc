@@ -1,0 +1,738 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "gxresrc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "gxresrc.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+GX_IDC_TRACKWIDTH       CURSOR  DISCARDABLE     "RES\\GXWIDTH.CUR"
+GX_IDC_TRACKHEIGHT      CURSOR  DISCARDABLE     "RES\\GXHEIGHT.CUR"
+GX_IDC_SELDRAG          CURSOR  DISCARDABLE     "RES\\GXSELDRG.CUR"
+GX_IDC_ROWHEADER        CURSOR  DISCARDABLE     "RES\\GXROW.CUR"
+GX_IDC_COLHEADER        CURSOR  DISCARDABLE     "RES\\GXCOLUMN.CUR"
+GX_IDC_HSPLITBAR        CURSOR  DISCARDABLE     "RES\\GXSPLITH.CUR"
+GX_IDC_IMU              CURSOR  DISCARDABLE     "RES\\GXIMU.CUR"
+GX_IDC_IML              CURSOR  DISCARDABLE     "RES\\GXIML.CUR"
+GX_IDC_IMR              CURSOR  DISCARDABLE     "RES\\GXIMR.CUR"
+GX_IDC_IMD              CURSOR  DISCARDABLE     "RES\\GXIMD.CUR"
+GX_IDC_IMA              CURSOR  DISCARDABLE     "RES\\GXIMA.CUR"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "gxresrc.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""gxresrc.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GX_IDB_3DCTRL           BITMAP  DISCARDABLE     "RES\\GX3DCTRL.BMP"
+GX_IDB_3DCTRL95         BITMAP  DISCARDABLE     "RES\\GX3D95.BMP"
+GX_IDB_CHECK_95         BITMAP  DISCARDABLE     "RES\\GXCHK95.BMP"
+GX_IDB_CHECK_NT         BITMAP  DISCARDABLE     "RES\\GXCHKNT.BMP"
+GX_IDB_CHECK_FLAT       BITMAP  DISCARDABLE     "RES\\GXCHK31.BMP"
+GX_IDB_TTFONT           BITMAP  DISCARDABLE     "RES\\GXTTFONT.BMP"
+GX_IDB_ORIGIN_ALL       BITMAP  DISCARDABLE     "RES\\GXIMALL.BMP"
+GX_IDB_ORIGIN_VERT      BITMAP  DISCARDABLE     "RES\\GXIMVERT.BMP"
+GX_IDB_ORIGIN_HORZ      BITMAP  DISCARDABLE     "RES\\GXIMHORZ.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+GX_IDD_SETTINGS_PRINT DIALOG DISCARDABLE  0, 0, 363, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Установка печати"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Границы",IDC_STATIC,10,5,128,65,WS_GROUP
+    LTEXT           "Слева",IDC_STATIC,16,26,21,8,NOT WS_GROUP
+    EDITTEXT        GX_IDC_PMARGIN_LEFT,39,23,27,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    LTEXT           "Справа",IDC_STATIC,72,26,25,8,NOT WS_GROUP
+    EDITTEXT        GX_IDC_PMARGIN_RIGHT,100,22,26,12,ES_AUTOHSCROLL
+    LTEXT           "Сверху",IDC_STATIC,14,47,24,8,NOT WS_GROUP
+    EDITTEXT        GX_IDC_PMARGIN_TOP,39,44,27,12,ES_AUTOHSCROLL
+    LTEXT           "Снизу",IDC_STATIC,73,47,24,8,NOT WS_GROUP
+    EDITTEXT        GX_IDC_PMARGIN_BOTTOM,99,44,27,12,ES_AUTOHSCROLL
+    GROUPBOX        "Заголовки и  &линии",IDC_STATIC,10,74,128,105
+    CONTROL         "&Заголовки строк",GX_IDC_PCHECK_ROWLABELS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,18,89,70,10
+    CONTROL         "З&аголовки столбцов",GX_IDC_PCHECK_COLLABELS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,103,83,10
+    CONTROL         "Печать окантовки",GX_IDC_PCHECK_FRAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,117,75,10
+    CONTROL         "&Линии по столбцам",GX_IDC_PCHECK_VERTLINES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,131,79,10
+    CONTROL         "&Линии по строкам",GX_IDC_PCHECK_HORZLINES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,145,77,10
+    CONTROL         "&Только чёрно-белый",GX_IDC_PCHECK_BLACKWHITE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,159,82,10
+    GROUPBOX        "Просмотр",IDC_STATIC,145,6,178,103
+    CONTROL         "Grid_Preview",GX_IDC_PPREVIEW_USERCTL,"GXWND",
+                    WS_DISABLED | WS_BORDER | WS_TABSTOP,149,17,170,88
+    GROUPBOX        "&Порядок страниц",IDC_STATIC,145,113,106,66
+    CONTROL         "Сначала строки",GX_IDC_PRADIO_FIRSTROWS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,151,132,98,10
+    CONTROL         "Сначала столбцы",GX_IDC_PRADIO_FIRSTCOLS,"Button",
+                    BS_AUTORADIOBUTTON,151,153,93,10
+    GROUPBOX        "&Выравнивание страницы",IDC_STATIC,254,113,98,66
+    CONTROL         "&по столбцам",GX_IDC_PCENTER_VERTIKAL,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,263,134,57,10
+    CONTROL         "п&о строкам",GX_IDC_PCENTER_HORIZONTAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,262,154,53,10
+    CONTROL         "Сохранить установки",GX_IDC_PCHECK_SAVEDEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,214,190,86,10
+    DEFPUSHBUTTON   "Да",IDOK,13,188,50,14
+    PUSHBUTTON      "Выход",IDCANCEL,81,188,50,14
+END
+
+GX_IDD_SETTINGS_HEADERFOOTER DIALOG DISCARDABLE  0, 0, 337, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Предисловие / Послесловие"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Предисловие/послесловие",IDC_STATIC,3,4,321,121
+    CONTROL         "Grid_Preview",GX_IDC_HFTABWND,"CGXTabWnd",WS_GROUP | 
+                    WS_TABSTOP,7,17,280,106
+    PUSHBUTTON      "&Шрифт...",GX_IDC_PBTN_FONT,289,25,31,13
+    GROUPBOX        "Расстояние до окна",IDC_STATIC,3,128,214,35
+    LTEXT           "Заголовок:",IDC_STATIC,10,146,36,8,NOT WS_GROUP
+    EDITTEXT        GX_IDC_DIST_HEADLINE,55,142,42,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    LTEXT           "Послесловие:",IDC_STATIC,109,146,46,8,NOT WS_GROUP
+    EDITTEXT        GX_IDC_DIST_FOOTNOTE,158,142,41,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    GROUPBOX        "Нумерация страниц",IDC_STATIC,223,130,101,34
+    LTEXT           "Номер на первой странице.",IDC_STATIC,227,139,59,20,NOT 
+                    WS_GROUP
+    EDITTEXT        GX_IDC_PAGE_FIRST,292,141,27,13,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    CONTROL         "Сохранить установки",GX_IDC_PCHECK_SAVEDEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,207,183,86,10
+    DEFPUSHBUTTON   "Да",IDOK,6,182,50,14
+    PUSHBUTTON      "Выход",IDCANCEL,74,182,50,14
+END
+
+GX_IDD_SETTINGS_DLG DIALOG DISCARDABLE  0, 0, 337, 212
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Свойства экрана"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Заголовки и линии",IDC_STATIC,8,7,130,93,WS_GROUP
+    CONTROL         "&Кнопки 3D",GX_IDC_CHECK_3DBTNS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,18,25,48,10
+    CONTROL         "&Линии по столбцам",GX_IDC_CHECK_VERTLINES,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,18,41,81,10
+    CONTROL         "&Гортизонтальные линии",GX_IDC_CHECK_HORZLINES,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,18,55,97,10
+    CONTROL         "Отмечать текущую &строку",GX_IDC_CHECK_MARKFIXEDROW,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,18,71,
+                    103,10
+    CONTROL         "Отмечать текущий с&толбец",GX_IDC_CHECK_MARKFIXEDCOL,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,18,84,
+                    106,10
+    GROUPBOX        "Просмотр",IDC_STATIC,145,7,178,93,WS_GROUP
+    CONTROL         "Grid_Preview",GX_IDC_PREVIEW_USERCTL,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_GROUP,150,18,170,77
+    GROUPBOX        "Цвет",IDC_STATIC,7,103,131,80
+    LISTBOX         GX_IDC_LISTCOLORS,13,117,58,59,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "User1",GX_IDC_COLORBOX,"GXWND",0x0,74,114,61,63
+    CONTROL         "Сохранить установки",GX_IDC_CHECK_SAVEDEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,216,193,86,10
+    DEFPUSHBUTTON   "Да",IDOK,15,191,50,14
+    PUSHBUTTON      "Выход",IDCANCEL,83,191,50,14
+    CONTROL         "User Attributes",GX_IDC_USERPROPERTIES,"GXWND",WS_GROUP | 
+                    WS_TABSTOP,148,113,172,64
+    GROUPBOX        "Свойства пользователя",IDC_STATIC,145,103,178,80,
+                    WS_GROUP
+END
+
+IDD_GXALIGNPAGE DIALOG DISCARDABLE  0, 0, 204, 128
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Выравнивание"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Горизонтальное",IDC_STATIC,7,9,88,72
+    CONTROL         "Как обычно",IDC_GXRADIOSTANDARD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,14,23,53,10
+    CONTROL         "Влево",IDC_GXRADIOLEFT,"Button",BS_AUTORADIOBUTTON,14,
+                    36,50,10
+    CONTROL         "Посередине",IDC_GXRADIOCENTER,"Button",
+                    BS_AUTORADIOBUTTON,14,49,53,8
+    CONTROL         "Вправо",IDC_GXRADIORIGHT,"Button",BS_AUTORADIOBUTTON,14,
+                    62,54,10
+    CONTROL         "Перенос",IDC_GXCHECKWRAP,"Button",BS_AUTO3STATE | 
+                    WS_GROUP | WS_TABSTOP,10,90,48,10
+    CONTROL         "Позволить ввод",IDC_GXCHECKENTER,"Button",BS_AUTO3STATE | 
+                    WS_GROUP | WS_TABSTOP,10,105,67,10
+    GROUPBOX        "Вертикальное",IDC_STATIC,102,9,88,72
+    CONTROL         "Как обычно",IDC_GXRADIOVSTANDARD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,109,24,52,10
+    CONTROL         "Поверху",IDC_GXRADIOTOP,"Button",BS_AUTORADIOBUTTON,109,
+                    37,50,10
+    CONTROL         "Посередине",IDC_GXRADIOVCENTER,"Button",
+                    BS_AUTORADIOBUTTON,109,50,54,10
+    CONTROL         "Понизу",IDC_GXRADIOBOTTOM,"Button",BS_AUTORADIOBUTTON,
+                    109,63,54,10
+    CONTROL         "Саморазмер",IDC_GXCHECKAUTOSIZE,"Button",BS_AUTO3STATE | 
+                    WS_GROUP | WS_TABSTOP,106,90,57,10
+END
+
+IDD_GXBORDERSPAGE DIALOG DISCARDABLE  0, 0, 232, 125
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Границы"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Граница",IDC_STATIC,11,7,84,89
+    CONTROL         "",IDC_GXBTNBORDERALL,"Button",BS_OWNERDRAW | 
+                    WS_DISABLED | WS_TABSTOP,18,24,28,11
+    CONTROL         "",IDC_GXBTNBORDERLEFT,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,18,37,28,11
+    CONTROL         "",IDC_GXBTNBORDERRIGHT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,18,50,28,11
+    CONTROL         "",IDC_GXBTNBORDERTOP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    18,63,28,11
+    CONTROL         "",IDC_GXBTNBORDERBOTTOM,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,18,76,28,11
+    LTEXT           "Область",IDC_GXTEXTALL,53,25,36,10,WS_DISABLED
+    LTEXT           "Левая",IDC_STATIC,53,38,36,10,NOT WS_GROUP
+    LTEXT           "Правая",IDC_STATIC,53,51,36,10
+    LTEXT           "Верх",IDC_STATIC,53,64,36,10
+    LTEXT           "Низ",IDC_STATIC,53,77,36,10
+    GROUPBOX        "&Тип",IDC_STATIC,102,7,113,106
+    CONTROL         "",IDC_GXBTNTYPE1,"Button",BS_OWNERDRAW | WS_TABSTOP,113,
+                    24,42,11
+    CONTROL         "",IDC_GXBTNTYPE2,"Button",BS_OWNERDRAW | WS_TABSTOP,113,
+                    38,42,11
+    CONTROL         "",IDC_GXBTNTYPE3,"Button",BS_OWNERDRAW | WS_TABSTOP,113,
+                    52,42,11
+    CONTROL         "",IDC_GXBTNTYPE4,"Button",BS_OWNERDRAW | WS_TABSTOP,113,
+                    66,42,11
+    CONTROL         "",IDC_GXBTNTYPE5,"Button",BS_OWNERDRAW | WS_TABSTOP,163,
+                    24,42,11
+    CONTROL         "",IDC_GXBTNTYPE6,"Button",BS_OWNERDRAW | WS_TABSTOP,163,
+                    38,42,11
+    CONTROL         "",IDC_GXBTNTYPE7,"Button",BS_OWNERDRAW | WS_TABSTOP,163,
+                    52,42,11
+    CONTROL         "",IDC_GXBTNTYPE8,"Button",BS_OWNERDRAW | WS_TABSTOP,163,
+                    66,42,11
+    LTEXT           "&Цвет:",IDC_STATIC,112,90,20,8
+    COMBOBOX        IDC_GXCOMBOCOLOR,134,87,71,72,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GXCOLORPAGE DIALOG DISCARDABLE  0, 0, 239, 155
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Цвет"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Фактура",IDC_STATIC,10,0,216,90
+    LTEXT           "Передок",IDC_STATIC,15,17,38,8,NOT WS_GROUP
+    CONTROL         "User1",IDC_GXUSER1,"GXWND",0x0,21,30,89,55
+    COMBOBOX        IDC_GXCOMBOPATTERN,74,9,80,135,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "User1",IDC_GXUSER2,"GXWND",0x0,131,30,89,55
+    RTEXT           "Фон",IDC_STATIC,167,17,16,8,NOT WS_GROUP
+    GROUPBOX        "Просмотр",IDC_STATIC,133,95,94,45
+    CONTROL         "",IDC_GXUSER3,"GXWND",WS_DISABLED,138,105,84,30
+    GROUPBOX        "Трёхмерность",IDC_STATIC,10,95,116,45
+    CONTROL         "Обычная",IDC_GXBTN3DRADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,15,110,42,10
+    CONTROL         "Выпукло",IDC_GXBTN3DRADIO2,"Button",BS_AUTORADIOBUTTON,
+                    15,121,42,10
+    CONTROL         "Вогнуто",IDC_GXBTN3DRADIO3,"Button",BS_AUTORADIOBUTTON,
+                    65,110,43,10
+    CONTROL         "Изначально",IDC_GXBTN3DRADIO4,"Button",
+                    BS_AUTORADIOBUTTON,65,121,55,10
+END
+
+IDD_GXCONTROLPAGE DIALOG DISCARDABLE  0, 0, 236, 153
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Управления"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Имя управления",IDC_STATIC,10,5,110,85
+    COMBOBOX        IDC_GXCOMBOCONTROLS,15,15,100,75,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Только чтение",IDC_GXCHECKREADONLY,"Button",
+                    BS_AUTO3STATE | WS_GROUP | WS_TABSTOP,15,96,63,10
+    CONTROL         "Знач.",IDC_GXCHECKVALUE,"Button",BS_AUTO3STATE | 
+                    WS_GROUP | WS_TABSTOP,15,111,30,10
+    EDITTEXT        IDC_GXEDITVALUE,47,110,61,12,ES_AUTOHSCROLL
+    LTEXT           "Длина",IDC_STATIC,15,127,24,8
+    EDITTEXT        IDC_GXEDITMAXLENGTH,47,125,33,11,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    GROUPBOX        "Список выбора",IDC_STATIC,130,5,93,85
+    EDITTEXT        IDC_GXEDITLIST,135,18,83,67,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_GROUP
+    CONTROL         "Три состояния",IDC_GXCHECKTRISTATE,"Button",
+                    BS_AUTO3STATE | WS_GROUP | WS_TABSTOP,130,111,64,10
+    CONTROL         "Разрешено",IDC_GXCHECKENABLED,"Button",BS_AUTO3STATE | 
+                    WS_GROUP | WS_TABSTOP,130,125,45,10
+END
+
+IDD_GXFONTPAGE DIALOG DISCARDABLE  0, 0, 240, 150
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Шрифт"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Имя:",IDC_STATIC,5,5,40,9,NOT WS_GROUP
+    COMBOBOX        IDC_GXCBFACENAME,5,14,109,54,CBS_SIMPLE | 
+                    CBS_OWNERDRAWFIXED | CBS_AUTOHSCROLL | CBS_SORT | 
+                    CBS_HASSTRINGS | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Состояние:",IDC_STATIC,121,5,40,9,NOT WS_GROUP
+    COMBOBOX        IDC_GXCBOUTLINE,121,14,64,54,CBS_SIMPLE | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Размер:",IDC_STATIC,192,5,40,9,NOT WS_GROUP
+    COMBOBOX        IDC_GXCBSIZE,192,14,32,54,CBS_SIMPLE | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Вид",IDC_STATIC,5,73,84,34
+    CONTROL         "За&чёркнутые",IDC_GXCHECKSTRIKEOUT,"Button",
+                    BS_AUTO3STATE | WS_TABSTOP,9,82,58,10
+    CONTROL         "&Подчёркнутые",IDC_GXCHECKUNDERLINE,"Button",
+                    BS_AUTO3STATE | WS_TABSTOP,9,95,65,10
+    GROUPBOX        "Просмотр",IDC_STATIC,97,73,132,68
+    COMBOBOX        IDC_GXCBTEXTCOLOR,13,122,68,72,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Цвет букв",IDC_STATIC,5,111,84,30
+    CONTROL         "AaBbCcXxYyZz",IDC_GXTEXTSAMPLE,"GXWND",0x0,103,84,122,
+                    53
+END
+
+IDD_GXSPECIALPAGE DIALOG DISCARDABLE  0, 0, 140, 124
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Основа"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Вид основы",IDC_STATIC,11,8,80,110
+    COMBOBOX        IDC_GXCOMBOBASEDON,15,20,72,94,CBS_SIMPLE | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_GXSTYLESDLG DIALOG DISCARDABLE  0, 0, 223, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Стили"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Да",IDOK,123,14,50,14
+    PUSHBUTTON      "Выход",IDCANCEL,123,33,50,14
+    GROUPBOX        "Имена",50701,8,9,96,136
+    COMBOBOX        IDC_GXCOMBOSTYLENAMES,14,25,85,115,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Изменить >>",IDC_GXBTNCHANGESTYLE,123,52,50,14
+    PUSHBUTTON      "Добавить >>",IDC_GXBTNADDSTYLE,123,71,50,14
+    PUSHBUTTON      "Удалить",IDC_GXBTNREMOVESTYLE,123,90,50,14
+    CONTROL         "Сохранить как изначальные",IDC_GXCHECKSAVESTYLESDEF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,134,110,10
+    PUSHBUTTON      "Изначальные",IDC_GXBTNLOADDEFSTYLES,123,109,50,14
+END
+
+IDD_GXUSERATTRPAGE DIALOG DISCARDABLE  0, 0, 236, 153
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Пользователь"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Свойства пользователя",-1,10,5,217,140
+    CONTROL         "User Attributes",IDC_GXUSRATTR_GRIDWND,"GXWND",
+                    WS_TABSTOP,15,20,207,118
+END
+
+IDD_GXMERGEPAGE DIALOG DISCARDABLE  0, 0, 190, 101
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Переносы"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Перенос в ячейках",-1,6,9,178,86
+    CONTROL         "Обычно",IDC_GXRADIOMERGE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,23,41,10
+    CONTROL         "Запрещено",IDC_GXRADIOMERGE5,"Button",
+                    BS_AUTORADIOBUTTON,15,35,55,10
+    CONTROL         "В линию, когда значение равно",IDC_GXRADIOMERGE1,"Button",
+                    BS_AUTORADIOBUTTON,15,47,121,10
+    CONTROL         "Столбцом, когда значение равно",IDC_GXRADIOMERGE2,
+                    "Button",BS_AUTORADIOBUTTON,15,59,126,10
+    CONTROL         "В линию, когда свойства всех ячеек равны",
+                    IDC_GXRADIOMERGE3,"Button",BS_AUTORADIOBUTTON,15,71,160,
+                    10
+    CONTROL         "Столбцом, когда свойства всех ячеек равны",
+                    IDC_GXRADIOMERGE4,"Button",BS_AUTORADIOBUTTON,15,83,164,
+                    10
+END
+
+IDD_GXFLOATPAGE DIALOG DISCARDABLE  0, 0, 238, 148
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Плавающие ячейки"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Плавающиие ячейки",IDC_STATIC,6,9,173,67
+    CONTROL         "Перекрытие других ячеек",IDC_GXCHECKFLOATCELL,"Button",
+                    BS_AUTO3STATE | WS_TABSTOP,13,28,104,10
+    CONTROL         "Перекрытие другими ячейками",IDC_GXCHECKFLOATCELL2,
+                    "Button",BS_AUTO3STATE | WS_TABSTOP,13,50,133,10
+    LTEXT           "Примечание: некоторые вида ячеек (напр., составные) не могут быть плавающими и не допускают таких установок.",
+                    IDC_STATIC,9,90,170,32
+END
+
+IDD_GXFORMATPAGE DIALOG DISCARDABLE  0, 0, 238, 148
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Формат"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_GXCOMBO_FORMAT,16,22,81,112,CBS_SIMPLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Точность",IDC_STATIC,114,26,31,8
+    EDITTEXT        IDC_GXEDIT_PLACES,155,22,48,15,ES_AUTOHSCROLL
+    GROUPBOX        "Вид формата",IDC_STATIC,6,8,215,132
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,1,0,0
+ PRODUCTVERSION 6,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "ClassWorks\0"
+            VALUE "FileVersion", "6.1.000\0"
+            VALUE "LegalCopyright", "Copyright © 1995-1998 ClassWorks, Stefan Hцnig \0"
+            VALUE "FileDescription", "ObjGrid DLL Shared Library - Release Version\0"
+            VALUE "InternalName", "GXDLLR\0"
+            VALUE "OriginalFilename", "GX61R.DLL\0"
+            VALUE "ProductName", "Objective Grid\0"
+            VALUE "ProductVersion", "6.1.000\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_COLOR_GRIDLINES  "Grid Lines"
+    GX_IDS_COLOR_FIXEDLINES "Fixed Lines"
+    GX_IDS_COLOR_TRACKINGLINE "Tracking Line"
+    GX_IDS_COLOR_BACKGROUND "Background"
+    GX_IDS_COLOR_DRAGGINGLINE "Dragging Line"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_TEXT_HEADER      "Header"
+    GX_IDS_TEXT_FOOTER      "Footer"
+    GX_IDS_RECORD           "Record"
+    GX_IDS_PROCESSING       "Processing..."
+    GX_IDS_DONE             "Done."
+    GX_IDS_CANCELESC        "Press ESC to cancel"
+    GX_IDS_LEFTALIGN        "Left Aligned"
+    GX_IDS_CENTER           "Centered"
+    GX_IDS_RIGHTALIGN       "Right Aligned"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_FONTOUTLINE      "Normal\nItalic\nBold\nBold Italic\nNot Bold\nNot Italic"
+    GX_IDS_FONTSIZE         "8\n9\n10\n11\n12\n14\n16\n18\n20\n22\n24\n28\n36\n48\n56\n72"
+    GX_IDS_USERATTRNAME     "Attribute"
+    GX_IDS_USERATTRTITLE    "Value"
+    GX_IDS_OUTLINECURRENTCELL "Current Cell."
+    GX_IDS_INVERTNORMAL     "Invert Thin."
+    GX_IDS_INVERTTHICK      "Invert Thick."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_CTRL_EDIT        "Edit Control"
+    GX_IDS_CTRL_STATIC      "Static Text"
+    GX_IDS_CTRL_PUSHBTN     "Pushbutton"
+    GX_IDS_CTRL_RADIOBTN    "Radio Buttons"
+    GX_IDS_CTRL_CHECKBOX    "Checkbox, 1/0"
+    GX_IDS_CTRL_COMBOBOX    "ComboBox, no text-fit"
+    GX_IDS_CTRL_HOTSPOT     "Hotspot Edit"
+    GX_IDS_CTRL_SPINEDIT    "Spin Edit"
+    GX_IDS_CTRL_HEADER      "Header"
+    GX_IDS_CTRL_SCROLLEDIT  "Edit Control, Scrollbar"
+    GX_IDS_CTRL_LISTBOX     "Listbox"
+    GX_IDS_CTRL_CHECKBOX3D  "Checkbox, 3d-Effect"
+    GX_IDS_CTRL_RADIOBTN3D  "Radio Buttons, 3d-Effect"
+    GX_IDS_CTRL_ZEROBASED   "ComboBox, zero-based"
+    GX_IDS_CTRL_ONEBASED    "ComboBox, one-based"
+    GX_IDS_CTRL_TEXTFIT     "ComboBox, text-fit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_ABORTOPERATION   "Do you want to abort the operation?"
+    GX_IDS_CANNOTUNDO       "Operation is too large for the undo buffer. Do you want to continue?"
+    GX_IDM_REDO             "Redoing %1 ..."
+    GX_IDM_UNDO             "Undoing %1 ..."
+    GX_IDM_UNDOINFO         "Generating undo information ..."
+    GX_IDM_STORECELLS       "Storing cells ...."
+    GX_IDM_RESTORECELLS     "Restoring cells ..."
+    GX_IDM_CELLFORMATTING   "Cells."
+    GX_IDM_REMOVEROWS       "Removing rows ..."
+    GX_IDM_REMOVECOLS       "Removing columns ..."
+    GX_IDM_COPYTEXT         "Copying text format ..."
+    GX_IDM_COPYINTERNAL     "Copying internal format ..."
+    GX_IDM_RANGETOOBIG      "Range too big."
+    GX_IDM_CUTDATA          "Cut Data."
+    GX_IDM_CUTTINGDATA      "Cutting data ..."
+    GX_IDM_PASTINGDATA      "Pasting data from clipboard..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDM_PASTENOTMULTI    "Pasting is not possible for multi-area selections."
+    GX_IDM_PASTEDATA        "Paste."
+    GX_IDM_REPLACINGALL     "Replacing values ..."
+    GX_IDM_REPLACEALL       "Replace All"
+    GX_IDM_SEARCHING        "Searching values ..."
+    GX_IDM_SETROWHEIGHT     "Change Row Heights"
+    GX_IDM_SETCOLWIDTH      "Change Column Widths"
+    GX_IDM_SETDEFAULTROWHEIGHT "Change Default Row Height"
+    GX_IDM_SETDEFAULTCOLWIDTH "Change Default Column Width"
+    GX_IDM_MOVEROWS         "Move Rows"
+    GX_IDM_MOVECOLS         "Move Columns"
+    GX_IDM_INSERTROWS       "Insert Rows"
+    GX_IDM_INSERTCOLS       "Insert Columns"
+    GX_IDM_SETCOVEREDCELLS  "Cover Cells"
+    GX_IDM_SETSTYLERANGE    "Cells"
+    GX_IDM_SETFROZENCOLS    "Freeze Columns"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDM_SETFROZENROWS    "Freeze Rows"
+    GX_IDM_HIDEROWS         "Hide Rows"
+    GX_IDM_HIDECOLS         "Hide Columns"
+    GX_IDM_RESIZEROWS       "Resizing Rows"
+    GX_IDM_RESIZECOLS       "Resizing Columns"
+    GX_IDM_UNDOCURRENTCELL  "Current Cell"
+    GX_IDM_PASTEDIFFRANGE   "Clipboard size is different from selected range"
+    GX_IDM_DATEINVALID      "'%1' is not a valid date!"
+    GX_IDM_DATEOUTOFRANGE   "Date '%1' out of range (it is either before 1970 or after 2037)!"
+    GX_IDM_DRAGDROP_COPY    "Copy"
+    GX_IDM_DRAGDROP_MOVE    "Move"
+    GX_IDM_CLEARDATA        "Clear Cells"
+    GX_IDM_SORTROWS         "Sort Rows"
+    GX_IDM_SORTCOLS         "Sort Columns"
+    GX_IDM_NOTENOUGHMEMORY  "Not enough memory"
+    GX_IDM_CANCELED         "Canceled"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_INVERTDRAWBORDER "Thin Border."
+    GX_IDS_INVERTTHICKBORDER "Thick Border."
+    GX_IDS_3DFRAME          "Normal\nRaised\nInset\nnone"
+    GX_IDS_UA_VALID_MIN     "Valid: Min. Value"
+    GX_IDS_UA_VALID_MAX     "Valid: Max. Value"
+    GX_IDS_UA_VALID_MSG     "Valid: Warning Msg"
+    GX_IDS_UA_SPINBOUND_MIN "SpinBound: Min. Value"
+    GX_IDS_UA_SPINBOUND_MAX "SpinBound: Max. Value"
+    GX_IDS_UA_SPINBOUND_WRAP "SpinBound: Wrap Value"
+    GX_IDS_INVERTNOBORDER   "No Border."
+    GX_IDS_UA_ODBCFIELDNO   "Field No."
+    GX_IDS_UA_CHECKBOX_CHECKED "Checkbox: Checked Value"
+    GX_IDS_UA_CHECKBOX_UNCHECKED "Checkbox: Unchecked Value"
+    GX_IDS_UA_SPINSTART     "SpinEdit: start value"
+    GX_IDS_UA_TOOLTIPTEXT   "Tooltip-Text"
+    GX_IDS_UA_INPUTMASK     "Maskedit: Input Mask"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_STYLE_STANDARD   "Standard"
+    GX_IDS_STYLE_ROWHEADER  "Row Header"
+    GX_IDS_STYLE_COLHEADER  "Column Header"
+    GX_IDS_STYLE_DBBOOLEAN  "Boolean Fields"
+    GX_IDS_STYLE_DBNUMERIC  "Numeric Fields"
+    GX_IDS_STYLE_DBCURRENCY "Currency Fields"
+    GX_IDS_STYLE_DBDATE     "Date Fields"
+    GX_IDS_STYLE_DBTEXT     "Text fields"
+    GX_IDS_STYLE_DBBINARY   "Binary Fields"
+    GX_IDS_STYLE_DBMEMO     "Memo Fields"
+    GX_IDS_STYLE_DBGUID     "GUID Fields"
+    GX_IDS_STYLE_DELETEDROWS "Deleted Rows Appearance"
+    GX_IDS_STYLE_CONSTRAINTVIOL "Constraint Violation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_CTRL_CBS_DROPDOWN "MFC ComboBox"
+    GX_IDS_CTRL_CBS_DROPDOWNLIST "MFC DropDownList"
+    GX_IDS_CTRL_ODBCARROWHEADER "Arrow Header"
+    GX_IDS_CTRL_ONEBASED_EX "Combo, disp.choice, 1-base"
+    GX_IDS_CTRL_ZEROBASED_EX "Combo, disp.choice, 0-base"
+    GX_IDS_CTRL_BROWSEARROWHEADER "Row Header"
+    GX_IDS_CTRL_RICHEDIT    "Rich Edit"
+    GX_IDS_CTRL_MASKEDIT    "Masked Edit"
+    GX_IDS_CTRL_PROGRESS    "Progressbar"
+    GX_IDS_CTRL_PASSWORD    "Password Edit"
+    GX_IDS_CTRL_COLORWELL   "Colorwell"
+    GX_IDS_CTRL_CBS_TABBED_DROPDOWN "Tabbed MFC ComboBox"
+    GX_IDS_CTRL_CBS_TABBED_DROPDOWNLIST "Tabbed MFC DropDownList"
+    GX_IDS_CTRL_TABBED_COMBOBOX "Tabbed ComboBox"
+    GX_IDS_CTRL_CHECKLIST_COMBOBOX "Dropdown CheckListBox"
+    GX_IDS_CTRL_DATETIME    "Date Time Control with popup calendar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_UA_INPUTPROMPT   "Maskedit: Prompt Char"
+    GX_IDS_UA_PROGRESS_MIN  "Progress: Lower Bound"
+    GX_IDS_UA_PROGRESS_MAX  "Progress: Upper Bound"
+    GX_IDS_UA_PROGRESS_CAPTIONMASK "Progress: Caption"
+    GX_IDS_UA_TABLIST_KEYCOL "TabList: Key Column"
+    GX_IDS_UA_TABLIST_TEXTCOL "TabList: Text Column"
+    GX_IDS_UA_TABLIST_SHOWALLCOLS "TabList: Show all columns"
+    GX_IDS_UA_TABLIST_TITLEROW "TabList: Display Column Titles"
+    GX_IDS_UA_TABLIST_COLWIDTHS "TabList: Column Widths"
+    GX_IDS_UA_TABLIST_SORTCOL "TabList: Sort Columns"
+    GX_IDS_UA_DATENOEDIT    "DateTime: Non editable fields"
+    GX_IDS_UA_DATEMIN       "DateTime: Minimum allowed date"
+    GX_IDS_UA_DATEMAX       "DateTime: Maximum allowed date"
+    GX_IDS_UA_DATEVALIDMODE "DateTime: Validation mode"
+    GX_IDS_UA_DATEFORMATTYPE "DateTime: Date format type"
+    GX_IDS_UA_CUSTOMFORMAT  "DateTime: Custom date format "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDM_CHANGESTYLESMAP  "Styles Map Changes"
+    GX_IDM_CHANGEPROPERTIES "Property Settings"
+    GX_IDM_CHANGEBASESTYLE  "Base Style"
+    GX_IDM_SETRANGENAME     "Set Range Name"
+    GX_IDM_DELETERANGENAME  "Delete Range Name"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_CTRL_DATETIMENOCAL "Date time control without calendar"
+    GX_IDS_CTRL_CURRENCY    "Currency control"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_CHOICE_DATENOEDIT 
+                            "No Edit\nFixed Year\nFixed Month\nFixed Day\nFixed Hour\nFixed Minute\nFixed Second"
+    GX_IDS_CHOICE_DATEVALIDMODE 
+                            "No Validation\t0\nTime\t1\nDate\t2\nDate and Time\t3\n"
+    GX_IDS_CHOICE_DATEFORMATTYPE 
+                            "Time\t0\nShortDate\t1\nLongDate\t2\nCustom\t3"
+    GX_IDS_FONTORIENTATION  "0\n45\n90\n135\n180\n225\n270\n315\n"
+    GX_IDS_UA_FASTINPUT     "DateTime: Fast Input"
+    GX_IDS_UA_CURSEP        "Currency: Separators"
+    GX_IDS_UA_CURRENCYDEF   "Currency: Attributes"
+    GX_IDS_UA_CURPOSFORMAT  "Currency: Positive Format"
+    GX_IDS_UA_CURNEGFORMAT  "Currency: Negative Format"
+    GX_IDS_UA_CURNUMDECIMALS "Currency: Number of decimals"
+    GX_IDS_UA_CURNUMFRACT   "Currency: Number of fractional digits "
+    GX_IDS_UA_CURSHOWCALC   "Currency: Enable calculator button"
+    GX_IDS_CHOICE_CURNEGFORMAT 
+                            "($1)\n-$1\n$-1\n$1-\n(1$)\n-1$\n1-$\n1$-\n-1 $\n-$ 1\n$ 1-\n"
+    GX_IDS_CHOICE_CURPOSFORMAT "$1\n1$\n$ 1\n1 $\n(1$)\n"
+    GX_IDS_UA_CURMON        "Currency: Monetary Symbol. "
+    GX_IDS_UA_TABLIST_CHOICELISTID "TabList: Unique choicelist id"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_CHOICE_FORMAT    "Default\nScientific\nFixed\nGeneral\nDollars\nComma\nHex\nLogic\nDD-MMM-YY\nDD-MMM\nMMM-YY\nMM/DD/YY\nHidden\nHH:MM:SS\nPercent\nText\nDD.MM.YYYY\nYYYY-MM-DD\nMM/DD/YY HH:MM\nUser1\nUser2\nUser3\nUser4\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GX_IDS_CALCENTER        "Enter"
+    GX_IDS_CALCERROR        "Error "
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

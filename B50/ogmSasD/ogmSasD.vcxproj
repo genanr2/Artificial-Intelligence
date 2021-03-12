@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9323F4DD-D627-49CC-AEA4-40908B8829D0}</ProjectGuid>
+    <RootNamespace>ogmSasD</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\debug\</OutDir>
+    <IntDir>.\..\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\debug/ogmSasD.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\datagrid\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_GXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\..\Debug/ogmSasD.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4430;4183;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>.\..\debug/ogmSasD.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\ogmsasd.DEF</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>.\..\debug/ogmSasD.lib</ImportLibrary>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/ogmSasD.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OGMSASD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/ogmSasD.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/ogmSasD.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\ogmsasd.DEF</ModuleDefinitionFile>
+      <ProgramDatabaseFile>.\Release/ogmSasD.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Release/ogmSasD.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="gxabstr.cpp" />
+    <ClCompile Include="Gxapp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gxautscr.cpp" />
+    <ClCompile Include="gxcalcsi.cpp" />
+    <ClCompile Include="gxcbmbtn.cpp" />
+    <ClCompile Include="gxccbbox.cpp" />
+    <ClCompile Include="gxccheck.cpp" />
+    <ClCompile Include="gxccombo.cpp" />
+    <ClCompile Include="gxcedhot.cpp" />
+    <ClCompile Include="gxcedit.cpp" />
+    <ClCompile Include="gxcedspn.cpp" />
+    <ClCompile Include="gxcharro.cpp" />
+    <ClCompile Include="gxchbmbt.cpp" />
+    <ClCompile Include="gxchbtn.cpp" />
+    <ClCompile Include="gxchcbbt.cpp" />
+    <ClCompile Include="gxchead.cpp" />
+    <ClCompile Include="gxchhsbt.cpp" />
+    <ClCompile Include="gxchild.cpp" />
+    <ClCompile Include="gxclear.cpp" />
+    <ClCompile Include="Gxcoll.cpp" />
+    <ClCompile Include="gxcorabs.cpp" />
+    <ClCompile Include="gxcorbuf.cpp" />
+    <ClCompile Include="gxcorclp.cpp" />
+    <ClCompile Include="gxcorcur.cpp" />
+    <ClCompile Include="gxcordim.cpp" />
+    <ClCompile Include="gxcordra.CPP" />
+    <ClCompile Include="Gxcore.cpp" />
+    <ClCompile Include="gxcoret.cpp" />
+    <ClCompile Include="gxcorfit.cpp" />
+    <ClCompile Include="gxcorfr.cpp" />
+    <ClCompile Include="gxcorfri.cpp" />
+    <ClCompile Include="gxcormsg.cpp" />
+    <ClCompile Include="gxcorprn.cpp" />
+    <ClCompile Include="gxcorscr.cpp" />
+    <ClCompile Include="gxcorsel.cpp" />
+    <ClCompile Include="gxcorsiz.cpp" />
+    <ClCompile Include="gxcorsty.cpp" />
+    <ClCompile Include="gxcpmov.cpp" />
+    <ClCompile Include="gxcpmovd.cpp" />
+    <ClCompile Include="gxcpush.cpp" />
+    <ClCompile Include="gxcradio.cpp" />
+    <ClCompile Include="gxcstat.cpp" />
+    <ClCompile Include="Gxctrl.cpp" />
+    <ClCompile Include="gxcvedit.cpp" />
+    <ClCompile Include="gxcvrcel.cpp" />
+    <ClCompile Include="gxcvrdra.cpp" />
+    <ClCompile Include="Gxdata.cpp" />
+    <ClCompile Include="gxdib.cpp" />
+    <ClCompile Include="gxdll.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Gxdrawx.cpp" />
+    <ClCompile Include="gxdrgwnd.cpp" />
+    <ClCompile Include="gxdxtext.cpp" />
+    <ClCompile Include="gxfactry.cpp" />
+    <ClCompile Include="gxfreeze.cpp" />
+    <ClCompile Include="gxgmouse.cpp" />
+    <ClCompile Include="gxgmousw.cpp" />
+    <ClCompile Include="gxgscrlt.cpp" />
+    <ClCompile Include="gxhide.cpp" />
+    <ClCompile Include="Gxhint.cpp" />
+    <ClCompile Include="gxhinti.cpp" />
+    <ClCompile Include="gximouse.cpp" />
+    <ClCompile Include="gximousw.cpp" />
+    <ClCompile Include="gxinl.cpp" />
+    <ClCompile Include="gxmarked.cpp" />
+    <ClCompile Include="gxmoverc.cpp" />
+    <ClCompile Include="Gxparam.cpp" />
+    <ClCompile Include="gxplugin.cpp" />
+    <ClCompile Include="Gxprndev.cpp" />
+    <ClCompile Include="gxprof.cpp" />
+    <ClCompile Include="Gxprp.cpp" />
+    <ClCompile Include="Gxprpdlg.cpp" />
+    <ClCompile Include="Gxrange.cpp" />
+    <ClCompile Include="gxscrltp.cpp" />
+    <ClCompile Include="gxseldrg.cpp" />
+    <ClCompile Include="gxselgrx.cpp" />
+    <ClCompile Include="gxselrgu.cpp" />
+    <ClCompile Include="gxsizeu.cpp" />
+    <ClCompile Include="GXSplit.cpp" />
+    <ClCompile Include="Gxstydlg.cpp" />
+    <ClCompile Include="gxstygd2.cpp" />
+    <ClCompile Include="gxstygd3.cpp" />
+    <ClCompile Include="gxstygdi.cpp" />
+    <ClCompile Include="gxstyle2.cpp" />
+    <ClCompile Include="Gxstyles.cpp" />
+    <ClCompile Include="gxstymap.cpp" />
+    <ClCompile Include="gxstyua.cpp" />
+    <ClCompile Include="gxstyuai.cpp" />
+    <ClCompile Include="Gxtbeam.cpp" />
+    <ClCompile Include="Gxtime.cpp" />
+    <ClCompile Include="gxttn.cpp" />
+    <ClCompile Include="gxtwnd.cpp" />
+    <ClCompile Include="gxupdopt.cpp" />
+    <ClCompile Include="Gxview.cpp" />
+    <ClCompile Include="gxviewt.cpp" />
+    <ClCompile Include="Gxvw.cpp" />
+    <ClCompile Include="Gxwait.cpp" />
+    <ClCompile Include="gxwnd.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ogmSasD.vcx" />
+    <None Include="ogmsasd.DEF" />
+    <None Include="RES\GXCOLUMN.CUR" />
+    <None Include="RES\GXHEIGHT.CUR" />
+    <None Include="RES\GXIMA.CUR" />
+    <None Include="RES\GXIMD.CUR" />
+    <None Include="RES\GXIML.CUR" />
+    <None Include="RES\GXIMR.CUR" />
+    <None Include="RES\GXIMU.CUR" />
+    <None Include="RES\GXROW.CUR" />
+    <None Include="RES\GXSELDRG.CUR" />
+    <None Include="RES\GXSPLITH.CUR" />
+    <None Include="RES\GXWIDTH.CUR" />
+    <None Include="Uml\ogmSasD.vcp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gxresflt.h" />
+    <ClInclude Include="gxresrc.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\GX3D95.BMP" />
+    <Image Include="RES\GX3DCTRL.BMP" />
+    <Image Include="RES\GXCHK31.BMP" />
+    <Image Include="RES\GXCHK95.BMP" />
+    <Image Include="RES\GXCHKNT.BMP" />
+    <Image Include="RES\GXIMALL.BMP" />
+    <Image Include="RES\GXIMHORZ.BMP" />
+    <Image Include="RES\GXIMVERT.BMP" />
+    <Image Include="RES\GXTTFONT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GxDll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

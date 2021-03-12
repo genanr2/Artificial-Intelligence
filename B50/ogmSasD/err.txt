@@ -1,0 +1,2 @@
+
+Gridsvw4.obj : error LNK2001: unresolved external symbol "public: virtual class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > __thiscall CGXProperties::ParseText(char const *)" (?ParseText@CGXProperties@@UAE?AV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@PBD@Z)

@@ -1,2 +1,0 @@
-Severity	Description	Path	File
-Error	"void __cdecl DisplayDaoException(class CDaoException *)" (?DisplayDaoException@@YAXPAVCDaoException@@@Z) already defined in b50.obj	C:\Kruzhka\VStudio\ee21\B50	C:\Kruzhka\VStudio\ee21\B50\Treeview.obj

@@ -1,0 +1,23 @@
+
+------------------- TRACEBACK -------------------------
+Module "Str  " Message   5: file "@(#)err.c	6.44 97/02/11" line 659
+Module "Str  " Message  -1: file "@(#)str.c	6.24 96/11/01" line 1654
+Module "RLib " Message  12: file "@(#)err.c	6.44 97/02/11" line 659
+Module "RLib " Message  -1: file "@(#)rlib.c	6.30 96/09/26" line 798
+Module "RLib " Message  -1: file "@(#)rlib.c	6.30 96/09/26" line 841
+Module "Err  " Message  -1: file "@(#)err.c	6.44 97/02/11" line 2073
+-------------------------------------------------------
+FATAL ERROR     Failure during error recovery
+
+------------------- TRACEBACK -------------------------
+Module "Err  " Message   2: file "@(#)err.c	6.44 97/02/11" line 659
+Module "Err  " Message  -1: file "@(#)err.c	6.44 97/02/11" line 1878
+Module "Menu " Message  -1: file "@(#)menumsw.c	6.95 97/04/16" line 3545
+Module "Str  " Message   5: file "@(#)err.c	6.44 97/02/11" line 659
+Module "Str  " Message  -1: file "@(#)str.c	6.24 96/11/01" line 1654
+Module "RLib " Message  12: file "@(#)err.c	6.44 97/02/11" line 659
+Module "RLib " Message  -1: file "@(#)rlib.c	6.30 96/09/26" line 798
+Module "RLib " Message  -1: file "@(#)rlib.c	6.30 96/09/26" line 841
+Module "Err  " Message  -1: file "@(#)err.c	6.44 97/02/11" line 2073
+-------------------------------------------------------
+FATAL ERROR     Failure during error recovery

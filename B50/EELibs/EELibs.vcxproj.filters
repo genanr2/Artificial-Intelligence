@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Packages">
+      <UniqueIdentifier>{4cbe4a07-0ce9-45c1-970f-2e98dd7e54f1}</UniqueIdentifier>
+      <Extensions>vcx;vcp;vcw</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7dee927d-4a5e-44b2-9d76-85f8c8ee0fc5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ceefa63f-3d33-4ddb-97da-fe3f907c17ca}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Uml\EELibs.vcp">
+      <Filter>Packages</Filter>
+    </None>
+    <None Include="..\EELibs.vcx">
+      <Filter>Packages</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\dmep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ikernel.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndcorep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndcorexp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbedtp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbgwp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbscpp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddmep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndgwp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndmicp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndoabap.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndolep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndresedp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndresp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndscpedp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndscrptp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndscvrbp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndtkitp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndvgmp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndwebedp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndwebp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\noirp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxdbp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxexep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxgfxp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxgwp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxoldp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxoop.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxrunp.lib" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EELibs - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\GENER~1.GEN\LOCALS~1\Temp\RSP221.tmp" with contents
+[
+/nologo /out:"..\Debug\EELibs.lib" 
+..\..\..\..\..\Ee21\Cpp\Lib\noirp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndoabap.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndcorexp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndcorep.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndolep.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndresp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndwebedp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nddbgwp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nddbp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nddbscpp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndresedp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndscpedp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndscrptp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndscvrbp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndtkitp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndvgmp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nddbedtp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndwebp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nxdbp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nxexep.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nxgfxp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nxgwp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nxoldp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nxoop.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nxrunp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndmicp.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ikernel.lib
+..\..\..\..\..\Ee21\Cpp\Lib\nddmep.lib
+..\..\..\..\..\Ee21\Cpp\Lib\dmep.lib
+..\..\..\..\..\Ee21\Cpp\Lib\ndgwp.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\GENER~1.GEN\LOCALS~1\Temp\RSP221.tmp"
+<h3>Output Window</h3>
+Creating library...
+ndoabap.lib(ndoabap.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndcorexp.lib(ndcorexp.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndcorep.lib(NDCOREP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndolep.lib(ndolep.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndresp.lib(NDRESP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndwebedp.lib(NDWEBEDP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nddbgwp.lib(NDDBGWP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nddbp.lib(NDDBP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nddbscpp.lib(NDDBSCPP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndresedp.lib(NDRESEDP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndscpedp.lib(NDSCPEDP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndscrptp.lib(NDSCRPTP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndscvrbp.lib(NDSCVRBP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndtkitp.lib(NDTKITP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndvgmp.lib(NDVGMP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nddbedtp.lib(NDDBEDTP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndwebp.lib(NDWEBP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nxdbp.lib(NXDBP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nxexep.lib(NXEXEP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nxgfxp.lib(NXGFXP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nxgwp.lib(NXGWP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nxoldp.lib(NXOLDP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nxoop.lib(NXOOP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nxrunp.lib(NXRUNP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndmicp.lib(NDMICP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ikernel.lib(ikernel.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+nddmep.lib(nddmep.dll) : warning LNK4006: _sys_get_dllinst already defined in ikernel.lib(ikernel.dll); second definition ignored
+nddmep.lib(nddmep.dll) : warning LNK4006: __imp__sys_get_dllinst already defined in ikernel.lib(ikernel.dll); second definition ignored
+nddmep.lib(nddmep.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+dmep.lib(DMEP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+ndgwp.lib(NDGWP.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in noirp.lib(NOIRP.dll); second definition ignored
+
+
+
+<h3>Results</h3>
+EELibs.lib - 0 error(s), 31 warning(s)
+</pre>
+</body>
+</html>

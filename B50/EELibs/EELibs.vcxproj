@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D3B6B4F-FED6-4338-A904-161ACFD31905}</ProjectGuid>
+    <RootNamespace>EELibs</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Release/EELibs.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Release\EELibs.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/EELibs.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\Debug\EELibs.lib</OutputFile>
+      <AdditionalLibraryDirectories>c:\ee21\CPP\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\EELibs.vcx" />
+    <None Include="Uml\EELibs.vcp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\dmep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ikernel.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndcorep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndcorexp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbedtp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbgwp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddbscpp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nddmep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndgwp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndmicp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndoabap.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndolep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndresedp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndresp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndscpedp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndscrptp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndscvrbp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndtkitp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndvgmp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndwebedp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\ndwebp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\noirp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxdbp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxexep.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxgfxp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxgwp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxoldp.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxoop.lib" />
+    <Library Include="..\..\..\..\..\Ee21\Cpp\Lib\nxrunp.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
